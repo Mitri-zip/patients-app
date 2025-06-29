@@ -1,10 +1,12 @@
 # Inspiration:
 
-I built this project to apply and grow my full-stack development skills by creating a real-world patient tracking system with AI support.
-The inspiration came from a desire to streamline how clinics and hospitals manage patient records, improve communication between patients and doctors, and provide a secure digital workflow similar to a real medical setting.
+This project was born from the need to streamline how clinics and hospitals manage patient records and improve communication between doctors and patients.
+Our goal was to create a real-world digital system that provides secure access, record editing, and AI-powered assistance — while preserving patient privacy.
+By using modern technologies and trusted medical APIs, the app supports better diagnoses and informed patient care.
 
-The goal was to allow patients and healthcare providers to interact through a centralized, efficient system — cutting down paperwork and improving record accessibility.
 This project challenged me to implement real authentication, role-based access, record editing features, and integrate generative AI to assist in clinical decision-making.
+
+Here is the link to try it out: https://patient-tracker-app-p2df.onrender.com/
 
 # What it Does:
 Patients App Tracker is a secure full-stack web application where both patients and doctors can log in to manage and view patient records.
@@ -32,8 +34,30 @@ Medications
 Test Results
 All updates are securely added to that patient's historical records
 
-AI Assistant:
-Powered by ChatGPT, the system assists doctors during diagnosis sessions by offering suggestions and prompts based on symptoms and notes.
+
+# AI Assistant & Medical API integration:
+This app integrates two advanced systems to power smart assistance:
+
+RxNorm (National Library of Medicine):
+Powers real-time suggestions in the Symptoms and Medications sections
+Ensures doctors use accurate, medically recognized terms during input
+
+ChatGPT (OpenAI):
+Not a chatbot interface
+
+On the Doctor side:
+Analyzes form input after brief pause (6 seconds of inactivity)
+Returns non-intrusive, highly relevant diagnosis suggestions before the record is saved
+
+On the Patient side:
+Provides supportive, educational insights based on the latest diagnosis
+Helps the patient understand:
+What the condition means
+What to monitor
+How to care for themselves
+When to contact their doctor
+
+
 
 # How it Was Built: 
 Tech Stack:
@@ -50,7 +74,7 @@ Doctors can only edit patient data through protected endpoints
 Fully responsive UI, user-friendly forms, and intuitive dashboards
 Axios used for smooth frontend-backend communication
 
-#Images:
+# Images:
 Login Screen:
 ![image](https://github.com/user-attachments/assets/9e88fb0d-9b6d-4a1f-94b7-02938e3b6630)
 
@@ -81,6 +105,18 @@ Edit Mode(For Doctors to create new records):
 
 AI:
 ![image](https://github.com/user-attachments/assets/6a944652-614b-4928-a3d6-350f3b420a0e)
+
+Saving Record on Doctor's Side:
+![image](https://github.com/user-attachments/assets/314530b7-d076-47a1-8874-446454d998c8)
+
+
+
+Patient's Side:
+
+![image](https://github.com/user-attachments/assets/dc4441ce-b19f-4fc0-be2f-e1be17b85eec)
+
+
+
 
 
 
